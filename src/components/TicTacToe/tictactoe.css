@@ -1,0 +1,140 @@
+.tic-tac-toe-wrapper .board  {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.tic-tac-toe-wrapper .board .cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color: transparent;
+    position: relative;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(1) {
+    border-top:none;
+    border-left: none;
+}
+  
+.tic-tac-toe-wrapper .board .cell:nth-child(2) {
+    border-top: none;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(4) {
+    border-left: none;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(6) {
+    border-right: none;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(8) {
+    border-bottom: none;
+}
+
+.tic-tac-toe-wrapper .board .cell:nth-child(9) {
+    border-right:none;
+    border-bottom: none;
+}
+
+
+.tic-tac-toe-wrapper .board .x::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: rebeccapurple;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.tic-tac-toe-wrapper .board .x::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: rebeccapurple;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+} 
+
+
+.tic-tac-toe-wrapper .board .o::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 15px solid lightsalmon;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.tic-tac-toe-wrapper .players-input-section {
+   display: flex;
+   justify-content: center;
+}
+
+
+.tic-tac-toe-wrapper .container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tic-tac-toe-wrapper  .players-progress {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tic-tac-toe-wrapper .winner-section {
+    margin: 25px 0;
+}
+
+.tic-tac-toe-wrapper .winner-section .win {
+    margin: 0;
+    color: limegreen;
+}
+
+.tic-tac-toe-wrapper .winner-section .draw {
+    margin: 0;
+    color: crimson;
+}
+
+.tic-tac-toe-wrapper .reset-section {
+    margin-top: 25px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+

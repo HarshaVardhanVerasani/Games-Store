@@ -1,0 +1,89 @@
+.drum-kit-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/band.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.drum-kit-wrapper .key-buttons {
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.drum-kit-wrapper .button-6 {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  transition: all 150ms;
+  background-color: transparent;
+  color: white;
+}
+
+.drum-kit-wrapper .button-6:hover {
+  border-color: rgba(0, 244, 248, 0.866);
+}
+
+.drum-kit-wrapper .button-6:hover {
+  transform: translateY(-2px);
+}
+
+.drum-kit-wrapper .button-6:active {
+  background-color: white;
+  transform: translateY(0);
+}
+
+.drum-kit-wrapper .flash {
+  background-color: white;
+  color: black;
+}
+
+.drum-kit-wrapper .better-experience {
+    text-align: center;
+    color: white;
+    opacity: 0.4;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .drum-kit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .drum-kit-wrapper .key-buttons {
+    display: grid;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .drum-kit-wrapper .button-6:active {
+    background-color: white;
+    color: black;
+  }
+
+  .drum-kit-wrapper .button-6 {
+    border: 2px outset rgb(255, 255, 255);
+  }
+
+  .drum-kit-wrapper .button-6:hover,
+  .drum-kit-wrapper .button-6:active {
+    background-color: none;
+    transform: none;
+    border: 2px outset rgb(255, 255, 255);
+  }
+}
