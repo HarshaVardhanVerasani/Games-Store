@@ -156,16 +156,16 @@ const TicTacToe = () => {
       {toggle && (
         <div className="players-progress">
           <div className="players-scores">
-            <h2>X</h2>
-            <h3>{playersData.name_1}</h3>
-            <h2>
+            <h2 style={{ opacity: "0.4" }}>X</h2>
+            <h3 style={{ color: "crimson" }}>{playersData.name_1}</h3>
+            <h2 style={{ color: "crimson" }}>
               <b>{playersData.score_1}</b>
             </h2>
           </div>
           <div className="players-scores">
-            <h2>O</h2>
-            <h3>{playersData.name_2}</h3>
-            <h2>
+            <h2 style={{ opacity: "0.4" }}>O</h2>
+            <h3 style={{ color: "purple" }}>{playersData.name_2}</h3>
+            <h2 style={{ color: "purple" }}>
               <b>{playersData.score_2}</b>
             </h2>
           </div>
@@ -188,10 +188,18 @@ const TicTacToe = () => {
           ))}
         </div>
         <div className="reset-section">
-          <button onClick={handleResetOrRefresh} name="clear">
+          <button
+            onClick={handleResetOrRefresh}
+            name="clear"
+            className="button-29"
+          >
             Clear Board
           </button>
-          <button onClick={handleResetOrRefresh} name="restart">
+          <button
+            onClick={handleResetOrRefresh}
+            name="restart"
+            className="button-30"
+          >
             New Game
           </button>
         </div>
