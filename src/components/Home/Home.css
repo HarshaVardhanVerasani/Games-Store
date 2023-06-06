@@ -1,12 +1,11 @@
 .home-page  {
     height: 100vh;
-    width: 100vw;
     display: flex;
     align-items: center;
 }
 
 .home-page .links {
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -17,4 +16,8 @@
     width: 150px;
     height: 150px;
     border-radius: 25px;
+}
+
+#dark .home-page {
+    background-color: black;
 }
