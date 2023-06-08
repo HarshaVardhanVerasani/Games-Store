@@ -85,6 +85,7 @@ const GuessTheNumber = () => {
           value={guessedNum}
           onChange={(e) => setGuessedNum(e.target.value)}
           onKeyDown={handleGuess}
+          placeholder="Type Number Here..."
         />
         <button onClick={handleGuess} className="button-27">
           <kbd>&#x21A9; Enter </kbd>

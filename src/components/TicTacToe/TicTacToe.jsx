@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "./tictactoe.css";
 
@@ -109,8 +109,7 @@ const TicTacToe = () => {
         ...playersData,
         winner: null,
       });
-    } 
-    else if (e.target.name === "restart") {
+    } else if (e.target.name === "restart") {
       setData(Array(9).fill(null));
       setTurn("x");
       setPlayersData({

@@ -1,6 +1,6 @@
 .number-guesser-wrapper {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,4 +72,14 @@
 .button-27:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+#dark .number-guesser-wrapper {
+  background-color: black;
+  color: white;
+}
+
+#dark .button-27 {
+  background-color: white;
+  color: black;
 }
